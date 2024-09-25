@@ -1,3 +1,32 @@
-<ion-app>
+<!-- Menu lateral -->
+<ion-menu side="start" menuId="main-menu" content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú Principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/home">
+        <ion-icon slot="start" name="home-outline"></ion-icon>
+        Inicio
+      </ion-item>
+      <ion-item routerLink="/perfil">
+        <ion-icon slot ="start" name="person-circle-outline"></ion-icon>
+        Perfil
+      </ion-item>
+      <ion-item routerlink="/Programar viaje">
+        <ion-icon slot ="start" name="car-sport-outline"></ion-icon>
+        Mis viajes
+      </ion-item>
+      
+      
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Contenido principal de la página -->
+<div id="main-content">
   <ion-router-outlet></ion-router-outlet>
-</ion-app>
+</div>
